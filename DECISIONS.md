@@ -135,7 +135,7 @@ Used `re.sub(r'^.*?[-–—]\s*', '', name_line, count=1)` to strip date prefixe
 ---
 
 ## Decision 9: Automated Explanation Numerical Validation Engine
-**Date:** 2026-08-01  
+**Date:** 2026-07-31  
 **Context:** Manual auditing exposed a hallucination/conflation error where Vanguard Retail's explanation stated a "six-week open P1 ticket" (from CSM notes) instead of its ground-truth NPS verbatim ("3 weeks").
 
 **Decision:** Built an automated numerical assertions validation script (`src/validate_explanations.py`).
@@ -146,7 +146,7 @@ Used `re.sub(r'^.*?[-–—]\s*', '', name_line, count=1)` to strip date prefixe
 - Validation script confirmed **0 mismatches** across all 150 numerical assertions.
 
 ## Decision 10: Near-Monochrome Dark SaaS Redesign (Efferd / Zentra Aesthetics)
-**Date:** 2026-08-01  
+**Date:** 2026-07-31  
 **Context:** Needed a high-contrast executive visual aesthetic matching modern dark SaaS decision tools without sacrificing readability or risk scanning.
 
 **Key Choices:**
@@ -158,7 +158,7 @@ Used `re.sub(r'^.*?[-–—]\s*', '', name_line, count=1)` to strip date prefixe
 ---
 
 ## Decision 11: Priority Accounts Visualization & Custom KPI Cards
-**Date:** 2026-08-01  
+**Date:** 2026-07-31  
 **Context:** Per stakeholder preference, restored the high-clarity Plotly horizontal bar chart for "Top 10 Priority Accounts by Risk Score" while preserving executive custom KPI cards.
 
 **Key Choices:**
