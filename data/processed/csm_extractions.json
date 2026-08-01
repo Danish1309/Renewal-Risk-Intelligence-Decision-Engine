@@ -1,6 +1,6 @@
 [
   {
-    "account_name_mentioned": "BritePath Solutions",
+    "account_name_mentioned": "BritePath Solutions (sic)",
     "account_id_if_stated": 1001,
     "sentiment": "negative",
     "churn_signals": [
@@ -14,14 +14,14 @@
       "Budget was cut 20% across all SaaS vendors."
     ],
     "action_items": [
-      "Attempt to reschedule the missed call and re-engage the account",
-      "Discuss budget constraints and explore adjusted pricing or scope",
-      "Identify alternative stakeholders now that team is focused on CMS evaluation"
+      "Attempt to reschedule the missed call",
+      "Discuss budget impact and explore pricing options",
+      "Inquire about the CMS evaluation to understand potential competition"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "The account missed its third scheduled call this quarter, cites a 20% budget cut across SaaS vendors, and is distracted by a CMS evaluation, indicating high renewal risk.",
+    "summary": "The account missed its third call this quarter, reports a 20% budget cut, and is evaluating a CMS, indicating heightened renewal risk.",
     "note_index": 0,
     "raw_text": "3/15 acct 1001 - BritePath Solutions (sic) call. No show for the third \ntime this quarter. Their admin told me the team has been pulled into a CMS evaluation \nproject led by their CTO. Budget was cut 20% across all SaaS vendors.",
     "model_used": "openai/gpt-oss-120b",
@@ -47,13 +47,14 @@
       "CTO joined the call and asked point blank if we have a migration path."
     ],
     "action_items": [
-      "Escalate the issue to product/engineering for a migration path timeline",
-      "Provide a clear migration plan to the CTO"
+      "Escalate to product team for a concrete migration path timeline",
+      "Provide CTO with detailed migration plan and timeline",
+      "Follow up on SDK deprecation resolution and impact"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "NovaTech is upset about multiple critical tickets due to SDK deprecation, demanding a migration path, and mentioned competitors Strapi and Sanity, indicating product frustration and churn risk; escalation and a clear migration plan are needed.",
+    "summary": "The customer is highly frustrated by multiple critical tickets caused by SDK deprecation, demanding a migration path, and has mentioned competitors, putting the renewal at risk.",
     "note_index": 1,
     "raw_text": "2026-03-20 | NovaTech Industries | James O.\nExtremely tense call. They've had 4 P1 tickets in the last month, all related to the \nv3 SDK deprecation. Their engineering team spent 200+ hours on workarounds. CTO \njoined the call and asked point blank if we have a migration path. I said we do but \ncouldn't give a timeline. They mentioned Strapi and Sanity by name. Need to escalate.",
     "model_used": "openai/gpt-oss-120b",
@@ -64,9 +65,10 @@
   {
     "account_name_mentioned": "meridian health",
     "account_id_if_stated": null,
-    "sentiment": "negative",
+    "sentiment": "mixed",
     "churn_signals": [
-      "migration_to_alternative"
+      "migration_to_alternative",
+      "product_frustration"
     ],
     "competitor_names": [],
     "key_quotes": [
@@ -75,13 +77,13 @@
       "Classic silent churn pattern."
     ],
     "action_items": [
-      "Provide information on data export APIs",
-      "Discuss migration plan and retention strategies"
+      "Provide information on data export APIs to VP of Digital",
+      "Discuss migration plan and potential retention strategies"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Meridian Health’s NPS is decent but usage has plummeted as they shift to a homegrown solution and inquire about data export APIs, signaling a migration risk and silent churn.",
+    "summary": "Usage has dropped sharply as the customer builds a custom middleware and moves to a homegrown solution, indicating migration risk despite a decent NPS and positive support feedback.",
     "note_index": 2,
     "raw_text": "march 25 -- meridian health -- priya\nGood news/bad news. NPS came back at 8 (decent) but their actual usage has cratered.\nTurns out they built a custom middleware layer and are slowly moving content to a \nhomegrown solution. The score reflects the *people* like our support team, not that \nthey plan to stay. Classic silent churn pattern. VP of Digital was on the last call \nand asked about data export APIs.",
     "model_used": "openai/gpt-oss-120b",
@@ -95,10 +97,8 @@
     "sentiment": "negative",
     "churn_signals": [
       "competitor_evaluation",
-      "competitor_mention",
       "pricing_dispute",
-      "missed_engagement",
-      "explicit_churn_threat"
+      "missed_engagement"
     ],
     "competitor_names": [
       "Contentful"
@@ -109,14 +109,14 @@
       "Two missed QBRs in a row."
     ],
     "action_items": [
-      "Schedule finance call with client to discuss price increase",
-      "Address billing team's concerns about mid-cycle price change",
-      "Re-engage to reschedule missed QBRs"
+      "Follow up to schedule the finance call to address pricing concerns",
+      "Engage billing team to discuss mid-cycle price increase",
+      "Re‑engage the customer to reschedule missed QBRs"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Pinacle Media is happy with the product but upset about a mid-cycle price increase, threatening to switch to Contentful, and has missed two QBRs, indicating high churn risk.",
+    "summary": "The customer is happy with the product but upset about a mid‑cycle price increase, threatened to switch to Contentful, and has missed two QBRs, putting the renewal at risk.",
     "note_index": 3,
     "raw_text": "3/28 Pinacle Media (acct 1004)\nThey're fine on the product side but the billing team is furious about the mid-cycle \nprice increase. Threatened to go to Contentful. I've offered to set up a call with \nour finance team but they haven't responded. Two missed QBRs in a row.",
     "model_used": "openai/gpt-oss-120b",
@@ -139,14 +139,14 @@
       "she's \"lost faith in the roadmap.\""
     ],
     "action_items": [
-      "Escalate the open ticket to resolve the automation issue",
-      "Arrange a meeting with the ops manager to discuss roadmap concerns",
-      "Identify a new champion or re-engage the former champion"
+      "Escalate the open ticket to engineering for faster resolution",
+      "Schedule a call with the ops manager to discuss roadmap and regain confidence",
+      "Assess possibility of a workaround or fix for the broken automation"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Vanguard Retail stopped using workflows after a Feb update broke automation, an unresolved ticket persists, and the ops manager has lost faith in the roadmap, putting the renewal at risk.",
+    "summary": "Vanguard Retail has stopped using workflows after a Feb update broke automation, with an open ticket pending for six weeks and the ops manager—previous champion—expressing lost faith in the roadmap, putting the renewal at risk.",
     "note_index": 4,
     "raw_text": "Apr 1 - vanguard retail\njust a quick note: they've stopped using workflows entirely since the Feb update broke\ntheir automation. they filed a ticket but it's been open for 6 weeks. the ops manager \ntold me she's \"lost faith in the roadmap.\" she used to be our biggest champion there.",
     "model_used": "openai/gpt-oss-120b",
@@ -159,25 +159,25 @@
     "account_id_if_stated": null,
     "sentiment": "negative",
     "churn_signals": [
-      "compliance_blocker",
       "product_frustration",
+      "compliance_blocker",
       "executive_involvement"
     ],
     "competitor_names": [],
     "key_quotes": [
       "Quarterly business review went poorly.",
-      "They brought their CISO and asked about our SOC 2 audit timeline (we're behind).",
-      "They're in a regulated industry so this is a dealbreaker if we can't address it."
+      "They're in a regulated industry so this is a dealbreaker if we can't address it.",
+      "They brought their CISO and asked about our SOC 2 audit timeline (we're behind)."
     ],
     "action_items": [
-      "Provide updated SOC 2 audit timeline and remediation plan",
-      "Investigate feasibility of offering single-tenancy options for Atlas Financial",
-      "Address deprecated SDK endpoint usage and plan migration to supported endpoints"
+      "Provide updated SOC 2 audit timeline to client",
+      "Investigate feasibility of offering single-tenancy options for their plan",
+      "Address SDK v3.1 deprecated endpoint usage and propose remediation"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "The QBR highlighted serious compliance and product issues, with the CISO flagging a delayed SOC 2 audit and lack of single‑tenancy as dealbreakers, putting the renewal at risk.",
+    "summary": "The QBR was poorly received, with the client flagging compliance gaps (SOC 2 audit delay, lack of single‑tenancy) and SDK issues, putting the renewal at risk.",
     "note_index": 5,
     "raw_text": "04/03 Atlas Financial\nQuarterly business review went poorly. They brought their CISO and asked about our \nSOC 2 audit timeline (we're behind). Also asked about single-tenancy options which \nwe don't offer on their current plan. They're in a regulated industry so this is a \ndealbreaker if we can't address it. Also on SDK v3.1 and hitting the deprecated \nendpoints daily.",
     "model_used": "openai/gpt-oss-120b",
@@ -192,8 +192,8 @@
     "churn_signals": [
       "competitor_evaluation",
       "pricing_dispute",
-      "product_frustration",
-      "explicit_churn_threat"
+      "explicit_churn_threat",
+      "product_frustration"
     ],
     "competitor_names": [
       "Kontent.ai"
@@ -204,15 +204,14 @@
       "Competitor POC with Kontent.ai is apparently already underway."
     ],
     "action_items": [
-      "Discuss discount options and potential pricing adjustments",
-      "Investigate and resolve editor performance issues",
-      "Engage with the CRO to address concerns and prevent churn",
-      "Monitor competitor POC with Kontent.ai and develop counter‑strategy"
+      "Negotiate discount to retain account",
+      "Address editor performance pain points",
+      "Engage with CRO to discuss renewal and competitive threat"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Zenith Publishing (ID 1007) is threatening to leave unless they receive a 30% discount, citing painful editor performance and an ongoing POC with competitor Kontent.ai, putting the renewal at risk.",
+    "summary": "Zenith Publishing (#1007) is negotiating renewal, demanding a 30% discount and reporting painful editor performance, while a Kontent.ai POC is underway, putting the renewal at risk.",
     "note_index": 6,
     "raw_text": "4/5 - Zenith Publishing (#1007)\nRenewl conversation started. They want a 30% discount or they walk. Current ARR is \nhigh but margin is already thin. Editor performance on their 50k+ entry library is \npainful and they know it. Competitor POC with Kontent.ai is apparently already underway.\nCRO was cc'd on the last email thread which is never a good sign.",
     "model_used": "openai/gpt-oss-120b",
@@ -223,10 +222,8 @@
   {
     "account_name_mentioned": "crescent labs",
     "account_id_if_stated": null,
-    "sentiment": "mixed",
-    "churn_signals": [
-      "downgrade_risk"
-    ],
+    "sentiment": "positive",
+    "churn_signals": [],
     "competitor_names": [],
     "key_quotes": [
       "Happy with the product overall but their new VP of Marketing wants to see an ROI report before signing off on renewal.",
@@ -234,14 +231,13 @@
       "Usage is stable but not growing."
     ],
     "action_items": [
-      "Create ROI report for the new VP of Marketing",
-      "Develop biotech vertical case studies with marketing",
-      "Follow up on renewal timeline after delivering ROI report"
+      "Create ROI report for VP of Marketing",
+      "Develop biotech vertical case studies with marketing team"
     ],
     "renewal_status": "needs_attention",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Crescent Labs is generally satisfied but the new VP of Marketing requires an ROI report and sector case studies before approving renewal, and usage is flat, indicating a potential downgrade risk.",
+    "summary": "Crescent Labs is happy with the product but the new VP of Marketing needs an ROI report and biotech case studies before approving renewal; usage is flat, so the renewal requires attention.",
     "note_index": 7,
     "raw_text": "3/10 - crescent labs\nHappy with the product overall but their new VP of Marketing wants to see an ROI \nreport before signing off on renewal. Asked for case studies in their vertical \n(biotech). We don't have any ready. I need to work with marketing on this.\nUsage is stable but not growing.",
     "model_used": "openai/gpt-oss-120b",
@@ -264,13 +260,14 @@
       "Their champion (Director of Content) is nervous about her own role post-merger."
     ],
     "action_items": [
-      "Track merger decision timeline (by May) and reassess renewal risk.",
-      "Engage with the current champion to address role concerns and identify a new advocate if needed."
+      "Track merger decision timeline and platform outcome",
+      "Identify and engage new champion post‑merger",
+      "Schedule follow‑up meeting before May to reassess renewal risk"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Orion Education loves the product but is merging with another ed‑tech firm, creating uncertainty about platform choice and the champion’s role, putting the renewal at risk.",
+    "summary": "Orion Education loves the product but faces a pending merger that could affect platform choice and the champion’s role, putting the renewal at risk.",
     "note_index": 8,
     "raw_text": "3/18 orion education (1009)\nThey love the product but are merging with another ed-tech company that uses WordPress.\nUnclear which platform survives. Decision expected by May. Their champion (Director \nof Content) is nervous about her own role post-merger. She's been our main advocate.",
     "model_used": "openai/gpt-oss-120b",
@@ -293,13 +290,13 @@
       "Might not renew unless we can give them a dedicated SA for 2 weeks to clean it up."
     ],
     "action_items": [
-      "Arrange a dedicated Solution Architect for 2 weeks to clean up the migration issues",
+      "Arrange a dedicated Solution Architect for a 2‑week cleanup of their migration",
       "Add TerraFirma to the early access program for the new Agent OS features"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "TerraFirma Manufacturing is eager for upcoming Agent OS features but suffers from a botched Drupal migration, leading to a messy implementation. They may not renew unless a dedicated Solution Architect assists with cleanup, indicating a high churn risk.",
+    "summary": "TerraFirma Manufacturing is eager for new Agent OS features but their incomplete Drupal migration is causing friction, and they may not renew unless they receive dedicated support to clean up the implementation.",
     "note_index": 9,
     "raw_text": "march 22 TerraFirma Manufacturing\nHad a call. They're interested in the new Agent OS features once it GAs. Want to be \nin the early access program. But their current implementation is a mess -- they \nnever finished the original migration from Drupal 18 months ago. Half their content \nis still on the old system. Might not renew unless we can give them a dedicated SA \nfor 2 weeks to clean it up.",
     "model_used": "openai/gpt-oss-120b",
@@ -321,12 +318,13 @@
       "Could go either way on renewal."
     ],
     "action_items": [
-      "Arrange a conversation with the product manager (PM) to address locale fallback issues."
+      "Arrange a conversation with the product manager (PM)",
+      "Follow up on locale fallback issue and ensure the v4.2 fix is applied"
     ],
-    "renewal_status": "at_risk",
+    "renewal_status": "needs_attention",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Skyline Travel is expanding internationally but facing locale management issues, filing multiple tickets and missing a recent SDK fix, creating uncertainty around renewal.",
+    "summary": "Skyline Travel is expanding internationally but facing locale management issues, generating product frustration and uncertainty around renewal; CSM should coordinate with the PM to resolve the fallback problem.",
     "note_index": 10,
     "raw_text": "3/26 skyline travel (1011)\nThey're expanding internationally which is great, but struggling with our locale \nmanagement. Filed 3 tickets about locale fallback behavior. On SDK v4.0 so they \nmissed the fix in v4.2. Could go either way on renewal. They asked to talk to PM.",
     "model_used": "openai/gpt-oss-120b",
@@ -337,10 +335,9 @@
   {
     "account_name_mentioned": "Quantum Commerce",
     "account_id_if_stated": null,
-    "sentiment": "mixed",
+    "sentiment": "positive",
     "churn_signals": [
-      "competitor_evaluation",
-      "pricing_dispute"
+      "competitor_evaluation"
     ],
     "competitor_names": [
       "builder.io"
@@ -351,14 +348,14 @@
       "API usage is actually up 40% MoM which is good leverage for us."
     ],
     "action_items": [
-      "Prepare a pricing match proposal for the builder.io offer",
-      "Confirm renewal call agenda and seat addition details",
-      "Highlight the 40% MoM API usage increase as leverage in negotiations"
+      "Prepare a pricing proposal matching builder.io's offer for the additional 20 seats",
+      "Confirm renewal call details and agenda",
+      "Leverage increased API usage in renewal discussion"
     ],
     "renewal_status": "needs_attention",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Quantum Commerce wants to add 20 seats but is demanding a price match with builder.io; the account shows strong usage growth (40% MoM) that can be leveraged in the renewal discussion.",
+    "summary": "Quantum Commerce is planning a renewal and seeks to add 20 seats, contingent on matching builder.io’s pricing, while API usage has risen 40% MoM, presenting an upsell opportunity.",
     "note_index": 11,
     "raw_text": "April 2 - Quantum Commerce \nrenewal call scheduled for next week. They want to add 20 seats but only if we \ncan match a competing offer from builder.io at $X/seat. Currently on Growth plan. \nAPI usage is actually up 40% MoM which is good leverage for us.",
     "model_used": "openai/gpt-oss-120b",
@@ -369,7 +366,7 @@
   {
     "account_name_mentioned": "RedLeaf Healthcare",
     "account_id_if_stated": null,
-    "sentiment": "negative",
+    "sentiment": "neutral",
     "churn_signals": [
       "compliance_blocker"
     ],
@@ -380,14 +377,14 @@
       "I submitted the request to our security team on 3/20 but haven't gotten a response."
     ],
     "action_items": [
-      "Obtain completed vendor security questionnaire from security team before May 15",
-      "Follow up with security team on pending request",
-      "Inform RedLeaf Healthcare of progress"
+      "Follow up with security team to obtain and submit the vendor security questionnaire before May 15",
+      "Escalate internally if response is delayed",
+      "Confirm receipt with RedLeaf Healthcare"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "RedLeaf Healthcare requires a vendor security questionnaire by May 15 for renewal due to a compliance audit, but the request is still pending, putting the renewal at risk.",
+    "summary": "RedLeaf Healthcare needs a vendor security questionnaire completed by May 15 for compliance; the request is pending, putting the renewal at risk.",
     "note_index": 12,
     "raw_text": "4/4 RedLeaf Healthcare\nCompliance audit coming up. They need us to fill out a vendor security questionnaire \nby May 15 or they can't renew (company policy). I submitted the request to our \nsecurity team on 3/20 but haven't gotten a response. This is time-sensitive.",
     "model_used": "openai/gpt-oss-120b",
@@ -400,23 +397,24 @@
     "account_id_if_stated": null,
     "sentiment": "mixed",
     "churn_signals": [
-      "product_frustration"
+      "product_frustration",
+      "downgrade_risk"
     ],
     "competitor_names": [],
     "key_quotes": [
-      "love the DX of our APIs",
-      "hate the management console UI",
-      "embarrassing to demo to stakeholders."
+      "love the DX of our APIs but hate the management console UI.",
+      "embarrassing to demo to stakeholders.",
+      "They renewed last year with reluctance."
     ],
     "action_items": [
-      "Address concerns about management console UI",
-      "Engage VP of Product to discuss UI improvements",
-      "Monitor renewal decision closely"
+      "Address management console UI concerns with product team",
+      "Schedule follow‑up meeting to discuss UI improvements and renewal confidence",
+      "Monitor renewal likelihood"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Bluepeak Software’s developer team loves the API DX but is frustrated with the management console UI, resulting in mixed sentiment and an at‑risk renewal.",
+    "summary": "Bluepeak Software’s dev team appreciates the API developer experience but is dissatisfied with the management console UI, leading to a reluctant renewal last year and a fence‑sitting stance this cycle (NPS 6). UI frustrations pose a churn risk and require immediate attention.",
     "note_index": 13,
     "raw_text": "04/07 bluepeak software\nThey're a developer-heavy team and love the DX of our APIs but hate the management \nconsole UI. Their VP of Product called it \"embarrassing to demo to stakeholders.\"\nThey renewed last year with reluctance. On the fence this time. NPS was 6.",
     "model_used": "openai/gpt-oss-120b",
@@ -433,19 +431,19 @@
     ],
     "competitor_names": [],
     "key_quotes": [
-      "Product is fine, team is fine",
-      "their parent company got acquired and all vendor contracts are under review",
-      "New procurement team is asking for enterprise-level SLAs on their Growth plan pricing"
+      "Product is fine, team is fine, but their parent company got acquired and all vendor contracts are under review.",
+      "New procurement team is asking for enterprise-level SLAs on their Growth plan pricing.",
+      "It's a negotiation game."
     ],
     "action_items": [
       "Engage with new procurement team to discuss enterprise-level SLAs and pricing",
-      "Assess impact of parent company acquisition on contract renewal",
+      "Monitor contract review process due to acquisition",
       "Prepare negotiation strategy"
     ],
     "renewal_status": "needs_attention",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Evergreen Media’s product usage remains positive, but the recent acquisition of its parent company has put vendor contracts under review and prompted the new procurement team to demand enterprise‑level SLAs, creating renewal risk that requires proactive engagement.",
+    "summary": "Evergreen Media's parent company was acquired, prompting a review of vendor contracts; the new procurement team is demanding enterprise‑level SLAs on their Growth plan, creating a negotiation that puts the renewal at risk and requires close attention.",
     "note_index": 14,
     "raw_text": "4/8 evergreen media 1015\nProduct is fine, team is fine, but their parent company got acquired and all vendor \ncontracts are under review. New procurement team is asking for enterprise-level \nSLAs on their Growth plan pricing. It's a negotiation game.",
     "model_used": "openai/gpt-oss-120b",
@@ -463,18 +461,19 @@
     ],
     "competitor_names": [],
     "key_quotes": [
-      "they barely use the product.",
+      "they barely use the product. 2 active users out of 15 seats.",
       "classic shelfware situation.",
       "they'd rather downgrade to Starter than pay full price for something they don't use."
     ],
     "action_items": [
-      "Plan a product adoption session with the IT director",
-      "Evaluate the downgrade request and propose a suitable plan"
+      "Discuss downgrade options with IT director",
+      "Develop plan to increase user adoption",
+      "Review ARR contraction risk"
     ],
     "renewal_status": "at_risk",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Northstar Logistics shows minimal product usage (shelfware) and is considering a downgrade, indicating a high risk of ARR contraction.",
+    "summary": "Northstar Logistics (account 1016) is barely using the product, with only 2 of 15 seats active, indicating shelfware and a desire to downgrade, posing a significant ARR contraction risk.",
     "note_index": 15,
     "raw_text": "4/9 Northstar Logistics\naccount 1016 -- they barely use the product. 2 active users out of 15 seats. \nmost content was migrated but nobody adopted the new workflow. classic \nshelfware situation. Their IT director told me they'd rather downgrade to Starter \nthan pay full price for something they don't use. not churn per se but \nsignificant ARR contraction risk.",
     "model_used": "openai/gpt-oss-120b",
@@ -496,14 +495,14 @@
       "their last NPS comment was in mandarin so i couldn't read it -- need to get it translated."
     ],
     "action_items": [
-      "Translate the Mandarin NPS comment",
-      "Address the CSM relationship concerns and consider assigning a new CSM",
-      "Prepare renewal discussion before the contract expires in May"
+      "Translate the last NPS comment from Mandarin",
+      "Assign a new CSM or address relationship concerns",
+      "Plan renewal strategy ahead of May contract expiration"
     ],
     "renewal_status": "needs_attention",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Pacific Rim Trading shows healthy usage but a strained CSM relationship, with requests for a new CSM and an untranslated Mandarin NPS comment; renewal in May needs attention.",
+    "summary": "Pacific Rim Trading (ID 1017) shows healthy usage but a strained CSM relationship, having requested a new CSM twice and leaving an untranslated Mandarin NPS comment; renewal in May requires attention to relationship and translation of feedback.",
     "note_index": 16,
     "raw_text": "4/10 pacific rim trading (1017)\nmixed signals. usage metrics look healthy but the CSM relationship has been rocky.\nthey've requested a new CSM twice. their last NPS comment was in mandarin so i \ncouldn't read it -- need to get it translated. contract up in may.",
     "model_used": "openai/gpt-oss-120b",
@@ -526,7 +525,7 @@
     "renewal_status": "expanding",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "The account (ID 1042) is satisfied, planning expansion to APAC next quarter, and renewal is expected to be a formality per the VP of Engineering.",
+    "summary": "Account 1042 is happy with the product, planning an APAC expansion next quarter, and renewal is expected to be a formality per the VP of Engineering.",
     "note_index": 17,
     "raw_text": "3/15 acct 1042 - all good, expanding to APAC team next quarter. \nloves the product. renewal is a formality according to their VP of Eng.",
     "model_used": "openai/gpt-oss-120b",
@@ -546,12 +545,14 @@
       "Already got budget approval. renewal + expansion coming in May."
     ],
     "action_items": [
-      "Prepare renewal and expansion paperwork for May"
+      "Prepare expansion order for 30 seats",
+      "Update contract for Enterprise upgrade",
+      "Confirm renewal paperwork for May"
     ],
     "renewal_status": "expanding",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Ironclad Security had a successful QBR, secured budget approval, and plans to add 30 seats and upgrade to Enterprise with renewal and expansion scheduled for May.",
+    "summary": "The customer had a successful QBR, secured budget approval, and plans to add 30 seats and upgrade to Enterprise with renewal and expansion slated for May.",
     "note_index": 18,
     "raw_text": "3/20 ironclad security\njust closed a great QBR. They want to add 30 more seats and upgrade to Enterprise.\nAlready got budget approval. renewal + expansion coming in May. champagne time.",
     "model_used": "openai/gpt-oss-120b",
@@ -574,7 +575,7 @@
     "renewal_status": "on_track",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Summit Analytics shows strong health and advocacy, with the dev team contributing a community plugin, indicating a positive relationship and on‑track renewal.",
+    "summary": "Summit Analytics had a routine check‑in; the relationship is positive with the dev team contributing a community plugin, indicating a healthy, on‑track renewal.",
     "note_index": 19,
     "raw_text": "3/22 summit analytics - routine check-in. everything is green. \ntheir dev team contributed a community plugin last month. true believers.",
     "model_used": "openai/gpt-oss-120b",
@@ -597,7 +598,7 @@
     "renewal_status": "expanding",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Coral Bay Resorts is expanding with three new properties this summer, has secured a 2-year renewal extension, and reports an excellent CSM relationship.",
+    "summary": "Coral Bay Resorts is expanding with three new properties this summer, has secured a 2‑year renewal extension, and maintains an excellent CSM relationship.",
     "note_index": 20,
     "raw_text": "04/01 coral bay resorts\nSmooth sailing. They're launching 3 new properties this summer and want us to power \nall the new sites. Renewal is locked in with a 2-year extension. CSM relationship \nis excellent.",
     "model_used": "openai/gpt-oss-120b",
@@ -608,7 +609,7 @@
   {
     "account_name_mentioned": "falcon aerospace",
     "account_id_if_stated": null,
-    "sentiment": "positive",
+    "sentiment": "neutral",
     "churn_signals": [],
     "competitor_names": [],
     "key_quotes": [
@@ -622,7 +623,7 @@
     "renewal_status": "on_track",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Falcon Aerospace has submitted its renewal PO in January and expects finalization by end of April with no concerns, indicating the renewal is on track.",
+    "summary": "Falcon Aerospace submitted their renewal purchase order in January and expects it to be finalized by the end of April, with no concerns expressed, indicating the renewal is on track.",
     "note_index": 21,
     "raw_text": "4/3 falcon aerospace\ndefense/aero customer so everything is slow and bureaucratic but their PO for renewal \nwas submitted to procurement in January. should be finalized by end of April. \nNo concerns from their side.",
     "model_used": "openai/gpt-oss-120b",
@@ -634,21 +635,22 @@
     "account_name_mentioned": "jade river tech",
     "account_id_if_stated": null,
     "sentiment": "positive",
-    "churn_signals": [],
+    "churn_signals": [
+      "explicit_churn_threat"
+    ],
     "competitor_names": [],
     "key_quotes": [
       "Random ping from their developer asking about GraphQL introspection.",
       "Non-renewal related.",
-      "They're deep in implementation. All good."
+      "All good."
     ],
     "action_items": [
-      "Follow up with the developer to address the GraphQL introspection question.",
-      "Clarify renewal intentions given the 'Non-renewal related' comment."
+      "Respond to developer's GraphQL introspection question"
     ],
     "renewal_status": "at_risk",
-    "confidence": "medium",
+    "confidence": "high",
     "language_detected": "en",
-    "summary": "The developer queried GraphQL introspection while the implementation is progressing well, but a note about 'Non-renewal related' raises potential renewal risk requiring clarification.",
+    "summary": "Developer queried GraphQL introspection in a non‑renewal context, but the implementation is deep and the customer reports everything is fine.",
     "note_index": 22,
     "raw_text": "3/28 jade river tech\nRandom ping from their developer asking about GraphQL introspection. Non-renewal \nrelated. They're deep in implementation. All good.",
     "model_used": "openai/gpt-oss-120b",
@@ -657,24 +659,23 @@
     "cross_validation": "er_only"
   },
   {
-    "account_name_mentioned": "Mosaic Digital",
+    "account_name_mentioned": "mosaic digital",
     "account_id_if_stated": null,
     "sentiment": "positive",
     "churn_signals": [],
     "competitor_names": [],
     "key_quotes": [
       "They want to integrate with Shopify Plus.",
-      "Asked about marketplace connectors.",
       "Renewal isn't until December so no rush but good engagement."
     ],
     "action_items": [
-      "Provide details on Shopify Plus integration and marketplace connectors",
-      "Plan follow‑up engagement before the December renewal"
+      "Follow up on Shopify Plus integration and marketplace connectors.",
+      "Schedule renewal discussion closer to December."
     ],
     "renewal_status": "on_track",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Mosaic Digital is interested in integrating with Shopify Plus and marketplace connectors; renewal is in December with good engagement, indicating an on‑track relationship.",
+    "summary": "Mosaic Digital is interested in integrating with Shopify Plus and exploring marketplace connectors, showing good engagement with a renewal due in December, indicating a stable, on‑track relationship.",
     "note_index": 23,
     "raw_text": "4/5 - mosaic digital\nThey want to integrate with Shopify Plus. Asked about marketplace connectors.\nRenewal isn't until December so no rush but good engagement.",
     "model_used": "openai/gpt-oss-120b",
@@ -689,15 +690,15 @@
     "churn_signals": [],
     "competitor_names": [],
     "key_quotes": [
-      "No concerns, just maintaining the relationship.",
       "They're regulated so they move slow but steady.",
-      "renewal isn't until Q4."
+      "renewal isn't until Q4.",
+      "No concerns, just maintaining the relationship."
     ],
     "action_items": [],
     "renewal_status": "on_track",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Beacon Insurance (acct 1024) had its annual check‑in; the relationship is stable with no concerns and renewal is scheduled for Q4, putting the account on track.",
+    "summary": "Beacon Insurance (acct 1024) had its annual check‑in; the relationship is stable with no concerns and renewal is scheduled for Q4, indicating an on‑track renewal.",
     "note_index": 24,
     "raw_text": "04/08 beacon insurance (acct 1024)\nannual check-in. They're regulated so they move slow but steady. renewal \nisn't until Q4. No concerns, just maintaining the relationship.",
     "model_used": "openai/gpt-oss-120b",
@@ -720,12 +721,12 @@
     ],
     "action_items": [
       "Provide the updated GDPR data processing agreement promptly",
-      "Apologize for the previous two‑week delay"
+      "Apologize for the delay and ensure faster turnaround for future requests"
     ],
     "renewal_status": "needs_attention",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "The client requested an updated GDPR agreement and expressed annoyance over a two‑week delay, indicating product/process frustration and a need for a quick turnaround.",
+    "summary": "Harbourside Dining requested an updated GDPR data processing agreement and expressed annoyance over a two‑week delay, indicating the need for a quicker turnaround to avoid dissatisfaction.",
     "note_index": 25,
     "raw_text": "4/10 - note for account 1099 (Harbourside Dining I think?)\nThey called to ask about our GDPR data processing agreement update. Routine \nrequest but they seemed annoyed it took 2 weeks last time. Quick turnaround \nneeded. -- Emily W.",
     "model_used": "openai/gpt-oss-120b",
@@ -750,7 +751,7 @@
     "renewal_status": "on_track",
     "confidence": "high",
     "language_detected": "en",
-    "summary": "Thunderbolt Moters is exploring headless commerce and is interested in composable architecture docs; the conversation was positive with no renewal risk, and the CSM needs to send a technical brief by end of week.",
+    "summary": "Thunderbolt Moters is evaluating headless commerce for dealer sites, showed interest in composable architecture docs, and the conversation was positive with no renewal risk; send the technical brief by EOW.",
     "note_index": 26,
     "raw_text": "march 30 - Thunderbolt Moters \nQuick sync. They're evaluating adding headless commerce to their dealer sites.\nInterested in the new composable architecture docs. Positive conversation overall.\nNo renewal risk but need to send them the technical brief by EOW.",
     "model_used": "openai/gpt-oss-120b",

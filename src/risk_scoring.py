@@ -21,7 +21,8 @@ from pathlib import Path
 
 
 # === SCORING WEIGHTS ===
-# These are opinionated — see README for tradeoff discussion
+# NOTE: README.md Section 4 documents these weights and the critical override logic.
+# Always keep README.md in sync whenever modifying weights, overrides, or tier thresholds.
 WEIGHTS = {
     'usage_trend': 0.25,
     'support_health': 0.20,
