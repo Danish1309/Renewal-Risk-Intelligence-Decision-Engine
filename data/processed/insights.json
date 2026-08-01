@@ -1,0 +1,185 @@
+[
+  {
+    "title": "SDK Deprecation: Product-Caused Churn Risk Hiding as Disengagement",
+    "type": "sdk_deprecation_impact",
+    "summary": "8 accounts (6.7% of total portfolio) are still on deprecated SDK v3.x, representing $2,233,000 in ARR. Among the 30 accounts renewing in the next 90 days, 8 are on deprecated SDKs with $2,233,000 ARR at stake. These accounts show an average API call decline of -15.9% per month versus 2.1% for accounts on current SDKs. A simple usage-decline rule would flag these as 'disengaged' — but the root cause is that their SDK is hitting deprecated endpoints being sunset on April 30, 2026. This is product-caused breakage, not organic churn, and requires a migration assistance response rather than a retention play.",
+    "evidence": {
+      "deprecated_sdk_accounts": 8,
+      "deprecated_sdk_arr": 2233000.0,
+      "deprecated_sdk_pct": 6.7,
+      "renewal_window": {
+        "deprecated_count": 8,
+        "deprecated_arr": 2233000.0,
+        "current_sdk_count": 22
+      },
+      "usage_trend_comparison": {
+        "deprecated_api_trend_pct_per_month": -15.94,
+        "current_api_trend_pct_per_month": 2.12,
+        "delta": -18.05,
+        "deprecated_user_trend_pct_per_month": -16.35,
+        "current_user_trend_pct_per_month": 1.73,
+        "deprecated_6m_api_change_pct": -58.22,
+        "current_6m_api_change_pct": 11.69
+      },
+      "locale_bug_affected": {
+        "count": 41,
+        "arr": 23658000.0,
+        "api_trend_pct": 0.77,
+        "sdk_versions": [
+          "v4.0.0",
+          "v4.1.0"
+        ]
+      },
+      "deprecated_accounts": [
+        {
+          "account_id": 1000,
+          "account_name": "Acme Corp",
+          "arr": 17000,
+          "sdk_version": "v3.2.0",
+          "api_calls_trend_pct": -15.39,
+          "api_calls_6m_change_pct": -52.24,
+          "days_to_renewal": 40,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1001,
+          "account_name": "BrightPath Solutions",
+          "arr": 21000,
+          "sdk_version": "v3.2.0",
+          "api_calls_trend_pct": -16.05,
+          "api_calls_6m_change_pct": -56.88,
+          "days_to_renewal": 80,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1002,
+          "account_name": "NovaTech Industries",
+          "arr": 29000,
+          "sdk_version": "v3.2.0",
+          "api_calls_trend_pct": -18.13,
+          "api_calls_6m_change_pct": -72.05,
+          "days_to_renewal": 34,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1003,
+          "account_name": "Meridian Health",
+          "arr": 193000,
+          "sdk_version": "v3.1.2",
+          "api_calls_trend_pct": -13.61,
+          "api_calls_6m_change_pct": -39.01,
+          "days_to_renewal": 58,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1004,
+          "account_name": "Pinnacle Media Group",
+          "arr": 203000,
+          "sdk_version": "v3.4.1",
+          "api_calls_trend_pct": -13.93,
+          "api_calls_6m_change_pct": -59.47,
+          "days_to_renewal": 25,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1005,
+          "account_name": "Vanguard Retail",
+          "arr": 106000,
+          "sdk_version": "v3.2.0",
+          "api_calls_trend_pct": -21.7,
+          "api_calls_6m_change_pct": -73.17,
+          "days_to_renewal": 48,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1006,
+          "account_name": "Atlas Financial",
+          "arr": 39000,
+          "sdk_version": "v3.4.1",
+          "api_calls_trend_pct": -12.81,
+          "api_calls_6m_change_pct": -51.19,
+          "days_to_renewal": 49,
+          "renewing_in_window": true
+        },
+        {
+          "account_id": 1007,
+          "account_name": "Zenith Publishing",
+          "arr": 1625000,
+          "sdk_version": "v3.1.2",
+          "api_calls_trend_pct": -15.88,
+          "api_calls_6m_change_pct": -61.79,
+          "days_to_renewal": 20,
+          "renewing_in_window": true
+        }
+      ]
+    },
+    "recommendation": "Create an 'SDK Migration Sprint' program: assign a dedicated solutions architect to the 8 deprecated-SDK accounts renewing in the next 90 days ($2,233,000 ARR). Frame renewal conversations around migration support rather than price/value — these accounts are frustrated by breakage, not disengaged from the product. For accounts like NovaTech (4 P1 tickets related to v3 deprecation) and Zenith Publishing (demanding 30% discount), the migration path is the unlock for retention."
+  },
+  {
+    "title": "\"Trapped Users\": Stable Usage Masking Unhappy Accounts",
+    "type": "trapped_usage",
+    "found": true,
+    "summary": "6 accounts in the renewal window show stable or growing usage but negative NPS or sentiment contradictions. These accounts won't show up in a usage-decline alert but are at risk of sudden churn once they find an alternative. Total ARR: $4,722,000.",
+    "evidence": {
+      "count": 6,
+      "arr": 4722000.0,
+      "accounts": [
+        {
+          "account_id": 1008,
+          "account_name": "Crescent Labs",
+          "arr": 390000,
+          "api_calls_trend_pct": 1.41,
+          "nps_score": 5.0,
+          "nps_verbatim": "Fine for now but we're watching competitors closely.",
+          "has_nps_contradiction": false
+        },
+        {
+          "account_id": 1012,
+          "account_name": "Quantum Commerce",
+          "arr": 93000,
+          "api_calls_trend_pct": -1.41,
+          "nps_score": 6.0,
+          "nps_verbatim": "Solid CMS but the pricing feels steep for what we get.",
+          "has_nps_contradiction": false
+        },
+        {
+          "account_id": 1017,
+          "account_name": "Pacific Rim Trading",
+          "arr": 1724000,
+          "api_calls_trend_pct": -3.83,
+          "nps_score": 5.0,
+          "nps_verbatim": "产品功能还可以，但客服团队沟通效率太低了。我们多次要求更换客户经理都没有得到回应。非常失望。",
+          "has_nps_contradiction": false
+        },
+        {
+          "account_id": 1019,
+          "account_name": "Summit Analytics",
+          "arr": 1751000,
+          "api_calls_trend_pct": 0.85,
+          "nps_score": 3.0,
+          "nps_verbatim": "Great developer experience and the support team is phenomenal.",
+          "has_nps_contradiction": true
+        },
+        {
+          "account_id": 1027,
+          "account_name": "Cedar Hill Partners",
+          "arr": 645000,
+          "api_calls_trend_pct": 0.55,
+          "nps_score": 5.0,
+          "nps_verbatim": "Would recommend to anyone in our industry.",
+          "has_nps_contradiction": false
+        },
+        {
+          "account_id": 1028,
+          "account_name": "Arctic Fox Games",
+          "arr": 119000,
+          "api_calls_trend_pct": -0.12,
+          "nps_score": 6.0,
+          "nps_verbatim": "Transformed how our team publishes content. Love it.",
+          "has_nps_contradiction": false
+        }
+      ]
+    },
+    "recommendation": "Schedule deep-dive CSM calls with these accounts focused on product feedback rather than renewal. High usage gives us leverage — understand what's driving the negative sentiment before a competitor capitalizes on it."
+  }
+]
